@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: theme('fontFamily.sans');
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+a {
+  color: inherit;
+}
+
+.main-gradient {
+  background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.2), transparent 45%),
+    radial-gradient(circle at bottom right, rgba(249, 115, 22, 0.2), transparent 40%);
+}
+
+.glass-panel {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.section-title {
+  @apply text-3xl font-semibold text-slate-100;
+}
+
+.section-subtitle {
+  @apply text-base text-slate-300;
+}
